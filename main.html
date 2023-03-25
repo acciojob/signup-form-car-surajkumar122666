@@ -8,9 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<form method="post" action="#" id="signup-form">
+	<form method="post">
   <div>
     <label for="name">Name*</label>
     <input type="text" id="name" name="name" placeholder="Name" required>
@@ -21,14 +19,15 @@
   </div>
   <div>
     <label>Gender*</label>
-    <input type="radio" id="gender_m" name="gender" value="male" required>male
-    <input type="radio" id="gender_f" name="gender" value="female" required>female
-
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label>
+    <input type="radio" id="gender_f" name="gender" value="female" required>
+    <label for="gender_f">Female</label>
   </div>
   <div>
     <label for="cars">Car Brands*</label>
     <select id="cars" name="cars" required>
-      <option value="">--Please choose an option--</option>
+      <option value="" disabled selected>--Please choose an option--</option>
       <option value="BMW">BMW</option>
       <option value="Audi">Audi</option>
       <option value="Mercedez">Mercedez</option>
@@ -51,14 +50,14 @@
     <input type="password" id="password" name="password" placeholder="Password" required>
   </div>
   <div>
-    <label>
-      <input type="checkbox" id="tos" name="tos" required>
-      I agree to the TOS
-    </label>
+    <input type="checkbox" id="tos" name="tos" required>
+    <label for="tos">I agree to the TOS</label>
   </div>
   <button type="submit">Submit</button>
 </form>
 
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
 
